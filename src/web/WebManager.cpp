@@ -11,7 +11,6 @@ WebManager::WebManager() {
 }
 
 WebManager::~WebManager() {
-	// TODO Auto-generated destructor stub
 }
 
 bool WebManager::Login(std::string username, std::string password) {

@@ -13,13 +13,13 @@
 
 int main(void)
 {
-	// CURL *curl;
-	// CURLcode res;
+	CURL *curl;
+	CURLcode res;
 
 	WebManager wm = WebManager();
 	wm.Login("TinyFawks", "foo");
 
-	/*
+	
 	curl = curl_easy_init();
 	if(curl) {
 		curl_easy_setopt(curl, CURLOPT_URL, "http://example.com");
@@ -32,6 +32,6 @@ int main(void)
 					curl_easy_strerror(res));
 		curl_easy_cleanup(curl);
 	}
-	*/
+
 	return 0;
 }

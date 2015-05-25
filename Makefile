@@ -14,7 +14,7 @@ CC            = gcc
 CXX           = g++
 DEFINES       = -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4 -D_REENTRANT -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -lcurl -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4 -std=c++0x -D_REENTRANT -Wall -W -fPIC $(DEFINES)
+CXXFLAGS      = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong --param=ssp-buffer-size=4 -std=c++0x -D_REENTRANT -Wall -W -fPIC $(DEFINES)
 INCPATH       = -I. -isystem /usr/include/qt -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt/bin/qmake
 DEL_FILE      = rm -f
@@ -36,7 +36,7 @@ DISTNAME      = FA_Uploader1.0.0
 DISTDIR = /home/fawks/Documents/FA_Uploder/.tmp/FA_Uploader1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-O1,--sort-common,--as-needed,-z,relro
-LIBS          = $(SUBLIBS) -lQt5Gui -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -lcurl -lQt5Gui -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
