@@ -7,14 +7,14 @@
 
 #include <stdio.h>
 #include <curl/curl.h>
-#include "WebManager.h"
+#include "web/WebManager.h"
 
 
 
 int main(void)
 {
-	CURL *curl;
-	CURLcode res;
+	// CURL *curl;
+	// CURLcode res;
 
 	WebManager wm = WebManager();
 	wm.Login("TinyFawks", "foo");
